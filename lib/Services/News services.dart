@@ -2,9 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:news_app/Models/ArticleModel.dart';
 
 class NewsService {
-  final Dio dio;
-
   NewsService(this.dio);
+  final Dio dio;
 
   Future<List<ArticleModel>> getTopHeadlines({required String category}) async {
     try {
